@@ -1,0 +1,112 @@
+<style>
+    body {
+    background-image: url("images/bg.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+    background-attachment: fixed;
+    color: #00ffff;
+    text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+}
+    h2 {
+        text-align: center;
+        color: #000000;
+        margin-bottom: 30px;
+    }
+
+    .btn {
+        padding: 8px 16px;
+        text-decoration: none;
+        color: #f7f0f0;
+        border-radius: 3px;
+        font-size: 14px;
+    }
+
+    .button {
+        border-radius: 4px;
+        background-color: #1e7bf4;
+        border: none;
+        color: #FFFFFF;
+        text-align: center;
+        padding: 20px;
+        transition: all 0.5s;
+        cursor: pointer;
+        margin: 5px;
+    }
+
+.button span {
+  cursor: pointer;
+  display: inline-block;
+  position: relative;
+  transition: 0.5s;
+}
+
+.button span:after {
+  content: '\00bb';
+  position: absolute;
+  opacity: 0;
+  top: 0;
+  right: -20px;
+  transition: 0.5s;
+}
+
+.button:hover span {
+  padding-right: 25px;
+}
+
+.button:hover span:after {
+  opacity: 1;
+  right: 0;
+}
+
+    .btn-warning {
+        background-color: #ffc107;
+        box-shadow: 0 5px #666;
+        transform: translateY(4px)
+    }
+
+    .btn-danger {
+      background-color: #dc3545;
+      box-shadow: 0 5px #666;
+      transform: translateY(4px);
+    }
+
+    .btn:hover {
+        opacity: 0.9;
+    }
+
+    table {
+        width: 100%;
+        border: 1px;
+        background-color: #fffff8;
+        box-shadow: 0 2px 8px rgb(187, 11, 5);
+        border-radius: 5px;
+        overflow: hidden;
+    }
+
+    th, td {
+        padding: 12px 15px;
+        text-align: center;
+        border-bottom:  solid #cd05f5;
+    }
+
+    th {
+        background-color: #1eff00;
+        color: white;
+    }
+
+    tr:hover {
+        background-color: #006efd;
+    }
+
+    .action-buttons {
+        display: flex;
+        gap: 8px;
+    }
+
+    .tambah-button {
+        margin-bottom: 15px;
+        display: inline-block;
+    }
+
+</styleh>

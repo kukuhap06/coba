@@ -1,3 +1,4 @@
+
 <!DOCTYPE html>
 <html lang="en">
 <head>
@@ -15,7 +16,7 @@
         <tr>
             <td>NIM</td>
             <td>:</td>
-            <td><input type="hidden" name="nim" id="nim"></td>
+            <td><input type="text" name="nim" id="nim"></td>
         </tr>
         <tr>
             <td>Nama</td>
@@ -26,14 +27,14 @@
             <td>Alamat</td>
             <td>:</td>
             <td>
-                <textarea name="alamat" id="alamat" ></textarea>
+                <textarea name="tempat" id="tempat" ></textarea>
             </td>
         </tr>
         <tr>
             <td>Jenis Kelamin</td>
             <td>:</td>
             <td>
-                <select name="jk" id="jk">
+                <select name="pk" id="pk">
                     <option value="laki-laki">Laki-Laki</option>          
                     <option value="perempuan">Perempuan</option>          
                 </select>
