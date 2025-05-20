@@ -1,112 +1,106 @@
-<style>
-    body {
-    background-image: url("images/bg.png");
-    background-size: cover;
-    background-repeat: no-repeat;
-    background-position: center;
-    background-attachment: fixed;
-    color: #00ffff;
-    text-shadow: 0 0 5px #00ffff, 0 0 10px #ff00ff;
+body {
+  background-image: url('./interface.jpg');
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  color: #00fff7;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  margin: 0;
+  padding: 20px;
+  text-shadow: 0 0 5px #00fff7, 0 0 10px #ff00f7;
 }
-    h2 {
-        text-align: center;
-        color: #000000;
-        margin-bottom: 30px;
-    }
 
-    .btn {
-        padding: 8px 16px;
-        text-decoration: none;
-        color: #f7f0f0;
-        border-radius: 3px;
-        font-size: 14px;
-    }
+h2.text-center {
+  text-align: center;
+  color: #ff00f7;
+  text-shadow: 0 0 10px #ff00f7, 0 0 20px #00fff7;
+  margin-bottom: 30px;
+}
 
-    .button {
-        border-radius: 4px;
-        background-color: #1e7bf4;
-        border: none;
-        color: #FFFFFF;
-        text-align: center;
-        padding: 20px;
-        transition: all 0.5s;
-        cursor: pointer;
-        margin: 5px;
-    }
-
-.button span {
+.button {
+  background: linear-gradient(135deg, #ff00f7, #00fff7);
+  color: #0f0f0f;
+  border: none;
+  padding: 15px 30px;
+  border-radius: 5px;
   cursor: pointer;
-  display: inline-block;
-  position: relative;
-  transition: 0.5s;
+  font-weight: bold;
+  text-transform: uppercase;
+  transition: all 0.4s ease;
+  box-shadow: 0 0 10px #ff00f7, 0 0 20px #00fff7;
 }
 
-.button span:after {
-  content: '\00bb';
-  position: absolute;
-  opacity: 0;
-  top: 0;
-  right: -20px;
-  transition: 0.5s;
+.button:hover {
+  transform: scale(1.05);
+  box-shadow: 0 0 20px #00fff7, 0 0 30px #ff00f7;
 }
 
-.button:hover span {
-  padding-right: 25px;
+table.table {
+  width: 100%;
+  border-collapse: collapse;
+  margin-top: 20px;
+  box-shadow: 0 0 20px #00fff7;
+  border-radius: 8px;
+  overflow: hidden;
+  background-color: rgba(15, 15, 15, 0.8);
 }
 
-.button:hover span:after {
-  opacity: 1;
-  right: 0;
+table.table th,
+table.table td {
+  padding: 12px 16px;
+  text-align: center;
+  border-bottom: 1px solid #333;
+  color: #ffffff;
 }
 
-    .btn-warning {
-        background-color: #ffc107;
-        box-shadow: 0 5px #666;
-        transform: translateY(4px)
-    }
+table.table th {
+  background: linear-gradient(to right, #ff00f7, #00fff7);
+  color: #0f0f0f;
+  font-weight: bold;
+}
 
-    .btn-danger {
-      background-color: #dc3545;
-      box-shadow: 0 5px #666;
-      transform: translateY(4px);
-    }
+table.table tr:hover {
+  background-color: rgba(0, 255, 247, 0.1);
+}
 
-    .btn:hover {
-        opacity: 0.9;
-    }
+.btn {
+  padding: 8px 12px;
+  font-size: 14px;
+  border: none;
+  border-radius: 4px;
+  text-transform: uppercase;
+  font-weight: bold;
+  cursor: pointer;
+  transition: 0.3s;
+}
 
-    table {
-        width: 100%;
-        border: 1px;
-        background-color: #fffff8;
-        box-shadow: 0 2px 8px rgb(187, 11, 5);
-        border-radius: 5px;
-        overflow: hidden;
-    }
+.btn-warning {
+  background-color: #ffae00;
+  color: #0f0f0f;
+  box-shadow: 0 0 10px #ffae00;
+}
 
-    th, td {
-        padding: 12px 15px;
-        text-align: center;
-        border-bottom:  solid #cd05f5;
-    }
+.btn-warning:hover {
+  background-color: #ffc94d;
+}
 
-    th {
-        background-color: #1eff00;
-        color: white;
-    }
+.btn-danger {
+  background-color: #ff0055;
+  color: white;
+  box-shadow: 0 0 10px #ff0055;
+}
 
-    tr:hover {
-        background-color: #006efd;
-    }
+.btn-danger:hover {
+  background-color: #ff3366;
+}
 
-    .action-buttons {
-        display: flex;
-        gap: 8px;
-    }
+.action-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 10px;
+}
 
-    .tambah-button {
-        margin-bottom: 15px;
-        display: inline-block;
-    }
-
-</styleh>
+.tambah-button {
+  margin: 20px 0;
+  text-align: center;
+}
