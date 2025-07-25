@@ -1,10 +1,10 @@
 <?php
-//koneksi ke database
-$koneksi = mysqli_connect("localhost","root","","akademik");
-//Cek koneksi
-if(mysqli_connect_errno()){
-    echo "Koneksi database gagal : ".mysqli_connect_errno();
-}else{
-    // echo "berhasil";
+$host = 'localhost';
+$user = 'root';
+$pass = '';
+$db = 'akademik';
+$koneksi = mysqli_connect($host, $user, $pass, $db);
+if (!$koneksi) {
+    die("Koneksi gagal: " . mysqli_connect_error());
 }
 ?>
